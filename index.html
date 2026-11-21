@@ -78,8 +78,7 @@
                             </li>
                         </ul>
                     </div>
-
-           <!-- FORM RSVP -->
+<!-- FORM RSVP -->
 <div class="p-4 p-md-5 rounded-4 text-white text-start my-4 shadow-sm" style="background-color: #112240 !important; border: 1.5px solid #d4af37 !important;">
     <form id="rsvp-form">
         <div class="row align-items-center">
@@ -94,13 +93,15 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label text-white small fw-bold">Konfirmasi Kehadiran</label>
-                    <select id="rsvp-status" class="form-select">
-                        <option value="Hadir" selected>Hadir</option>
+                    <select id="rsvp-status" class="form-select" required>
+                        <option value="" disabled selected>Pilih Status Kehadiran</option>
+                        <option value="Hadir">Hadir</option>
                         <option value="Berhalangan Hadir">Berhalangan Hadir</option>
                     </select>
                 </div>
-     
-                <button type="submit" class="btn w-100 fw-bold py-2 text-dark text-center" style="background-color: #d4af37; border-color: #d4af37;">
+                
+                <!-- Tombol Konfirmasi -->
+                <button type="submit" class="btn w-100 fw-bold py-2 text-dark text-center" style="background-color: #518df5; border-color: #113064;">
                     Konfirmasi Kehadiran 
                 </button>
 
