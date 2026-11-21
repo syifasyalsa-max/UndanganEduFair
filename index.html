@@ -79,34 +79,37 @@
                         </ul>
                     </div>
 
-                    <!-- FORM RSVP -->
-                    <div class="rsvp-custom-card p-4 p-md-5 rounded-4 text-white text-start my-4 shadow-sm">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 mb-4 mb-lg-0">
-                                <h3 class="fw-bold display-6 mb-2">Konfirmasi Kehadiran</h3>
-                                <p class="text-white-50 mb-0">Silakan isi formulir untuk mengonfirmasi kehadiran Anda.</p>
-                            </div>
-                            <div class="col-lg-6">
-                                <form id="rsvp-form">
-                                    <div class="mb-3">
-                                        <label class="form-label text-white small fw-bold">Nama</label>
-                                        <input type="text" id="rsvp-nama" class="form-control" placeholder="Nama lengkap">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label text-white small fw-bold">Konfirmasi Kehadiran</label>
-                                        <select id="rsvp-status" class="form-select" required>
-                                            <option value="" selected disabled>Pilih konfirmasi</option>
-                                            <option value="Hadir">Hadir</option>
-                                            <option value="Berhalangan Hadir">Berhalangan Hadir</option>
-                                        </select>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary w-100 fw-bold py-2 text-dark">Kirim Konfirmasi &rarr;</button>
-                                </form>
-                                <div id="rsvp-msg" class="alert alert-success mt-3 mb-0" style="display: none;"></div>
-                            </div>
-                        </div>
-                    </div>
+           <!-- FORM RSVP -->
+<div class="p-4 p-md-5 rounded-4 text-white text-start my-4 shadow-sm" style="background-color: #112240 !important; border: 1.5px solid #d4af37 !important;">
+    <form id="rsvp-form">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h3 class="fw-bold display-6 mb-2 text-white">Konfirmasi Kehadiran</h3>
+                <p class="text-white-50 mb-0">Silakan isi data Anda dan pilih status kehadiran.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="mb-3">
+                    <label class="form-label text-white small fw-bold">Nama</label>
+                    <input type="text" id="rsvp-nama" class="form-control" placeholder="Nama lengkap" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-white small fw-bold">Konfirmasi Kehadiran</label>
+                    <select id="rsvp-status" class="form-select">
+                        <option value="Hadir" selected>Hadir</option>
+                        <option value="Berhalangan Hadir">Berhalangan Hadir</option>
+                    </select>
+                </div>
+     
+                <button type="submit" class="btn w-100 fw-bold py-2 text-dark text-center" style="background-color: #d4af37; border-color: #d4af37;">
+                    Konfirmasi Kehadiran 
+                </button>
 
+                <!-- Pesan Notifikasi Sukses di Layar -->
+                <div id="rsvp-msg" class="alert alert-success mt-3" style="display: none;" role="alert"></div>
+            </div>
+        </div>
+    </form>
+</div>
                     <!-- Penutup -->
                     <p class="text-muted small mt-4">Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.</p>
 
